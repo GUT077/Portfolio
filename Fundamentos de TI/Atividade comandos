@@ -1,0 +1,52 @@
+1 -
+augusto_sorrentino@SN-358744 MINGW64 ~/desktop/contadordepalavras 
+$ echo "Irei aprender novos comandos" | wc
+ 1   4   29 
+
+*Contou o número de linhas, palavras e caracteres
+
+ como redirecionar o arquivo → 
+12 mkdir contadordepalavras 
+13 cd contadordepalavras 
+14 echo "Irei aprender novos comandos" | wc 
+15 cd .. 
+16 cd contadordepalavras 
+17 touch ContadorDePalavras
+18 cd .. 
+19 cd contadordepalavras 
+20 echo "Irei aprender novos comandos" > ContadorDePalavras 
+
+2- 
+echo Maria > Nomes 
+echo Joana >> Nomes 
+echo Ana >> Nomes 
+echo José >> Nomes 
+echo Ricardo >> Nomes
+echo João >> Nomes 
+
+3 -
+augusto_sorrentino@SN-358744 MINGW64 ~/desktop 
+$ wc Nomes 
+1   6   36 
+
+augusto_sorrentino@SN-358744 MINGW64 ~/desktop 
+$ cat Nomes 
+Maria 
+Joana 
+Ana 
+José 
+Ricardo 
+João 
+
+augusto_sorrentino@SN-358744 MINGW64 ~/desktop 
+$ cat Nomes | wc
+ 6   6   41 
+
+4 -
+ ls -r ./ |sort 
+Ana 
+Joana 
+João 
+José 
+Maria 
+Ricardo
